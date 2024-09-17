@@ -1,0 +1,78 @@
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the root element spans the full width */
+#root {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  border:2px solid red;
+}
+
+/* Rest of your CSS remains the same */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 8px;
+}
+
+.input-container button {
+  padding: 8px 16px;
+  background-color: goldenrod;
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-list li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-list button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-list button:hover {
+  background-color: #d32f2f;
+}
